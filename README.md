@@ -4,7 +4,7 @@ A lightweight, local audio processing and conversation analytics tool that trans
 
 ## 🎯 Features
 
-- **🎵 Audio Transcription**: Convert audio files to text using local speech recognition
+- **🎵 Audio Transcription**: Convert audio files to text using Faster-Whisper AI model
 - **🎭 Sentiment Analysis**: VADER-powered emotion detection and satisfaction analysis
 - **🎯 Intent Detection**: Rule-based pattern matching for conversation categorization
 - **📈 Conversation Metrics**: Turn analysis, speaking patterns, and interaction quality
@@ -206,9 +206,9 @@ For production deployments, consider:
 ### Backend Components
 
 - **FastAPI**: Modern Python web framework
-- **SpeechRecognition**: Local audio-to-text conversion
+- **SpeechRecognition**: Local audio-to-text conversion using faster-whisper
 - **VADER Sentiment**: Lexicon-based sentiment analysis
-- **PyDub**: Audio format conversion and processing
+- **Librosa and Pydub**: Audio format conversion and processing
 - **TextStat**: Readability and text statistics
 
 ### Frontend Components
@@ -223,7 +223,7 @@ For production deployments, consider:
 
 1. **Audio Upload**: Secure file handling with format validation
 2. **Format Conversion**: Automatic conversion to WAV using FFmpeg
-3. **Speech Recognition**: Local transcription with fallback engines
+3. **Speech Recognition**: Local transcription with Whisper AI
 4. **Text Analytics**: Parallel processing of multiple analysis types
 5. **Result Generation**: Comprehensive insights and metrics
 6. **Response Delivery**: Structured JSON with detailed results
