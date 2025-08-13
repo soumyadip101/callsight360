@@ -1,0 +1,32 @@
+# FastAPI and web server
+fastapi>=0.104.0,<0.105.0
+uvicorn[standard]>=0.24.0,<0.25.0
+python-multipart>=0.0.6
+aiofiles>=23.2.0
+
+# Analytics and NLP
+textstat>=0.7.3
+vadersentiment>=3.3.2
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Audio processing and transcription (Azure-optimized)
+faster-whisper>=0.9.0
+webrtcvad-wheels>=2.0.14
+pydub>=0.25.1
+librosa>=0.10.1
+soundfile>=0.12.1
+
+# PyTorch CPU version for Azure App Service (install separately)
+# torch>=2.1.0
+# torchaudio>=2.1.0
+
+# Scientific computing (Azure-compatible versions)
+numpy>=1.24.0,<1.27.0
+scipy>=1.11.0,<1.13.0
+scikit-learn>=1.3.0,<1.5.0
+
+# Additional dependencies for Azure deployment
+gunicorn>=21.2.0
+wheel>=0.40.0
+setuptools>=65.0.0
